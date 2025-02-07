@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-07T00:53:37.867472" rpa="false" schemaversion="5">
+<suite id="s1" name="FirstExcelTest" source="d:\Robot Framework\Excel Library\ExcelTests\FirstExcelTest.robot">
+<test id="s1-t1" name="CT 1 - Abrir um arquivo Excel, Ler Username e Password e fechar" line="11">
+<kw name="Ler Excel">
+<kw name="Open Excel Document" owner="ExcelLibrary">
+<arg>${path2}</arg>
+<arg>docname2</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" start="2025-02-07T00:53:38.512271" elapsed="0.010487"/>
+</kw>
+<kw name="Get Sheet" owner="ExcelLibrary">
+<arg>sheet_name=Sheet</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" start="2025-02-07T00:53:38.523151" elapsed="0.000376"/>
+</kw>
+<kw name="Read Excel Cell" owner="ExcelLibrary">
+<msg time="2025-02-07T00:53:38.524369" level="INFO">${data_cell01} = Login123</msg>
+<var>${data_cell01}</var>
+<arg>row_num=2</arg>
+<arg>col_num=1</arg>
+<doc>Returns content of a cell.</doc>
+<status status="PASS" start="2025-02-07T00:53:38.523811" elapsed="0.005519"/>
+</kw>
+<kw name="Read Excel Cell" owner="ExcelLibrary">
+<msg time="2025-02-07T00:53:38.530082" level="INFO">${data_cell02} = Senha123</msg>
+<var>${data_cell02}</var>
+<arg>row_num=2</arg>
+<arg>col_num=2</arg>
+<doc>Returns content of a cell.</doc>
+<status status="PASS" start="2025-02-07T00:53:38.529651" elapsed="0.000663"/>
+</kw>
+<kw name="Close Current Excel Document" owner="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" start="2025-02-07T00:53:38.530579" elapsed="0.000260"/>
+</kw>
+<msg time="2025-02-07T00:53:38.531130" level="INFO">${data_cell01} = None</msg>
+<msg time="2025-02-07T00:53:38.531343" level="INFO">${data_cell02} = None</msg>
+<var>${data_cell01}</var>
+<var>${data_cell02}</var>
+<status status="PASS" start="2025-02-07T00:53:38.510726" elapsed="0.020750"/>
+</kw>
+<status status="PASS" start="2025-02-07T00:53:38.509448" elapsed="0.067914"/>
+</test>
+<status status="PASS" start="2025-02-07T00:53:37.872661" elapsed="0.726658"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="FirstExcelTest" id="s1" pass="1" fail="0" skip="0">FirstExcelTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
